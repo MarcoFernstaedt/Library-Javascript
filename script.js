@@ -20,4 +20,19 @@ function addBookToLibrary(title, author, pages, read) {
     myLibrary.push(bookn)
 }
 
+// Display books on page
+function displayBooksOnPage(myLibrary) {
+    const book = document.querySelector('.books')
 
+    // looping over myLibrary array and displaying on card
+    myLibrary.array.forEach((book) => {
+        const card = document.createElement(div);
+        card.classList.add('card');
+        for (key in myLibrary) {
+            console.log(`${key}: ${myLibrary[key]}`);
+            const paragraph = document.createElement('p')
+            paragraph.textContent = (`${key}: ${myLibrary[key]}`);
+            card.appendChild(paragraph)
+        }
+    });
+}
