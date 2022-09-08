@@ -17,7 +17,7 @@ Books.prototype.info = function () {
 // Function for adding new book to array
 function addBookToLibrary(title, author, pages, read) {
     let book = new Books(title, author, pages, read)
-    myLibrary.push(bookn)
+    myLibrary.push(book)
 }
 
 // Display books on page
@@ -25,7 +25,7 @@ function displayBooksOnPage(myLibrary) {
     const book = document.querySelector('.books')
 
     // looping over myLibrary array and displaying on card
-    myLibrary.array.forEach((book) => {
+    myLibrary.forEach(book => {
         const card = document.createElement(div);
         card.classList.add('card');
         Books.appendChild(card);
@@ -37,3 +37,12 @@ function displayBooksOnPage(myLibrary) {
         }
     });
 }
+
+addBookToLibrary('123', 'Me', 420, 'Not read yet')
+addBookToLibrary('123', 'Me', 420, 'Not read yet')
+addBookToLibrary('123', 'Me', 420, 'Not read yet')
+addBookToLibrary('123', 'Me', 420, 'Not read yet')
+addBookToLibrary('123', 'Me', 420, 'Not read yet')
+addBookToLibrary('123', 'Me', 420, 'Not read yet')
+
+displayBooksOnPage();
