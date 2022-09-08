@@ -28,6 +28,7 @@ function displayBooksOnPage(myLibrary) {
     myLibrary.array.forEach((book) => {
         const card = document.createElement(div);
         card.classList.add('card');
+        Books.appendChild(card);
         for (key in myLibrary) {
             console.log(`${key}: ${myLibrary[key]}`);
             const paragraph = document.createElement('p')
