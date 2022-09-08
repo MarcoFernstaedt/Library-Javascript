@@ -56,6 +56,9 @@ h1 {
   padding: 5px;
   box-shadow: 5px 5px 5px black;
 }
+.add-book-form{
+  display: none
+}
 
 #add-book {
   display: grid;
